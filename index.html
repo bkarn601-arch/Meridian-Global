@@ -1372,9 +1372,10 @@ form.fb-card{background:linear-gradient(180deg,#FFFFFF,#FBFCFC);border:1px solid
   </div>
 
   <script>
-/* Form delivery: every website form is emailed to info@meridianglobalintel.com via FormSubmit. */
-window.MG_FORM="https://formsubmit.co/ajax/info@meridianglobalintel.com";
-window.MG_POST=async function(data,subject){try{const r=await fetch(window.MG_FORM,{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify(Object.assign({_subject:subject||"Website form",_template:"table",_captcha:"false",_replyto:data.email||""},data))});if(!r.ok)return false;const j=await r.json().catch(()=>({}));return j.success===true||j.success==="true"}catch(_){return false}};
+/* Form delivery: every website form is emailed to info@meridianglobalintel.com via Web3Forms (public access key). */
+window.MG_FORM="https://api.web3forms.com/submit";window.MG_KEY="76bf7971-530c-489d-b86c-2455d271da38";
+window.MG_POST=async function(data,subject){const B=window.__mgBtn;window.__mgBtn=null;let old;if(B){old=B.innerHTML;B.disabled=true;B.innerHTML="Sending…"}const ac=window.AbortController?new AbortController():null,tm=setTimeout(()=>{try{ac&&ac.abort()}catch(_){}},45000);try{const r=await fetch(window.MG_FORM,{method:"POST",signal:ac?ac.signal:undefined,headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify(Object.assign({access_key:window.MG_KEY,subject:subject||"Website form",from_name:"Meridian Global website"},data.email?{replyto:data.email}:{},data))});if(!r.ok)return false;const j=await r.json().catch(()=>({}));return j.success===true||j.success==="true"}catch(_){return false}finally{clearTimeout(tm);if(B){B.disabled=false;B.innerHTML=old}}};
+document.addEventListener("submit",e=>{const b=e.target&&e.target.querySelector&&e.target.querySelector('button[type=submit],button:not([type])');window.__mgBtn=b||null},true);
 </script>
   <nav class="crumbs wrap" id="crumbs" aria-label="Breadcrumb" hidden></nav>
   <div class="page" data-page="home" data-title="Home">

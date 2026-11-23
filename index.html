@@ -1385,8 +1385,8 @@ form.fb-card{background:linear-gradient(180deg,#FFFFFF,#FBFCFC);border:1px solid
         </div>
         <div class="hm-start"><span>Start here:</span><a href="#" data-w="inv"><i>◆</i>I'm an investor</a><a href="#" data-w="co"><i>▲</i>I run a company</a><a href="#" data-w="fo"><i>●</i>I'm a founder</a></div>
         <div class="hero-facts">
-          <div><b>6 factors</b><span>Political to legal</span></div>
-          <div><b>3 horizons</b><span>0–12 months to 10 years</span></div>
+          <div><i class="hf-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"/><path d="M12 12l8-4.5M12 12v9M12 12L4 7.5"/></svg></i><b>6 factors</b><span>Political to legal</span></div>
+          <div><i class="hf-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3.5 2"/></svg></i><b>3 horizons</b><span>0–12 months to 10 years</span></div>
         </div>
         <div class="dcg" id="dcg" aria-live="polite"></div>
       </div>
@@ -2619,46 +2619,70 @@ const SECSRC=[
  ["BOE Report, Emera–Canadian Utilities (6 Oct 2026)","https://boereport.com/2026/10/06/emera-bulks-up-for-power-demand-boom-with-10-billion-canadian-utilities-deal/amp/"],
  ["CRE Daily, IRT–Centerspace apartment REIT merger","https://www.credaily.com/?p=222589"],
  ["Trading Economics, commodities (6 Nov 2026 close)","https://tradingeconomics.com/commodities"]
+,
+ ["TPG, BILL agrees to be acquired by TPG in partnership with Corpay (19 Nov 2026)","https://www.tpg.com/news-and-insights/bill-agrees-to-be-acquired-by-tpg-in-partnership-with-corpay"],
+ ["Palo Alto Networks, to acquire Applied Compute (18 Nov 2026)","https://investors.paloaltonetworks.com/news-releases/news-release-details/palo-alto-networks-acquire-applied-compute-bringing-secure-open"],
+ ["Bending Spoons, Form 6-K Ex. 99.1: agreement to acquire Mailchimp (19 Nov 2026)","https://www.sec.gov/Archives/edgar/data/0002004711/000200471126000026/bsp_ex99-1.htm"],
+ ["SEC Form 6-K, Millicom to acquire Entel Peru (16 Nov 2026)","https://www.sec.gov/Archives/edgar/data/0000912958/000095010326017525/dp256915_6k.htm"],
+ ["Yahoo Finance, Stock market today: Dow and S&P 500 enter correction (20 Nov 2026)","https://finance.yahoo.com/markets/live/stock-market-today-friday-november-19-dow-sp-500-nasdaq-anthropic-nvidia-141644188.html"],
+ ["Healthcare Dive, HealthSpan raises Surgery Partners offer (10 Nov 2026)","https://www.healthcaredive.com/news/healthspan-partners-ups-surgery-partners-offer-to-6b-after-rival-bid/874313/"],
+ ["MarketScreener (S&P Capital IQ), Lilly to acquire Calytrix Bio (16 Nov 2026)","https://www.marketscreener.com/news/eli-lilly-and-company-entered-into-definitive-agreement-to-acquire-calytrix-bio-inc-for-1-5-billi-ce785edfdd89f423"],
+ ["SEC filing, Hancock Whitney–Trustmark (Nov 2026)","https://www.sec.gov/Archives/edgar/data/0000750577/000119312526457037/hwc-ex99_1.htm"],
+ ["Intesa Sanpaolo, MPS offer document published (10 Nov 2026)","https://group.intesasanpaolo.com/en/investor-relations/press-releases/2026/11/20261110-pub-doc-uk"],
+ ["The National, Mubadala and Centerbridge to buy Canaccord Wealth (16 Nov 2026)","https://thenationalnews.com/business/2026/11/16/mubadala-and-centerbridge-to-acquire-uks-canaccord-wealth"],
+ ["Grafa, Challenger knocks back sweetened TAL Dai-ichi offer (18 Nov 2026)","https://grafa.com/en/news/australia/challenger-knocks-back-sweetened-8-2b-tal-daiichi-offer"],
+ ["InkFreeNews (IndyStar), FERC approves BlackRock's AES purchase (21 Nov 2026)","https://www.inkfreenews.com/2026/11/21/feds-approve-blackrocks-aes-purchase/"],
+ ["POWER Magazine, LS Power buys NRG gas plants (Nov 2026)","https://www.powermag.com/ls-power-buying-nearly-5-gw-of-gas-fired-generation-from-nrg-in-4-billion-deal/"],
+ ["Oil & Gas Journal, Diamondback to acquire remaining Double Eagle Midland interest (16 Nov 2026)","https://www.ogj.com/general-interest/companies/news/55419221/diamondback-to-acquire-remaining-double-eagle-midland-basin-interest-in-multibillion-cash-stock-deal"],
+ ["BOE Report, Canadian Natural to acquire Advantage (16 Nov 2026)","https://boereport.com/2026/11/16/advantage-announces-agreement-to-be-acquired-by-canadian-natural-resources-ltd/"],
+ ["Indian Chemical News, Mitsui Chemicals to acquire JSR (10 Nov 2026)","https://www.indianchemicalnews.com/ma/mitsui-chemicals-to-acquire-chip-materials-firm-jsr-corp-for-116-billion-32597"],
+ ["Axios Pro, Thrive Holdings–ADT (29 Oct 2026)","https://axios.com/pro/all-deals/2026/10/29/thrive-holdings-adt-15b-take-private"],
+ ["Washington Technology, Shield AI to acquire Echodyne (Nov 2026)","https://www.washingtontechnology.com/companies/2026/11/shield-ai-acquires-radar-maker-echodyne-53-billion-deal/417086/"],
+ ["ACHR News, MasTec to acquire Murphy in $1.25bn deal (20 Nov 2026)","https://www.achrnews.com/articles/167026-mastec-to-acquire-mechanical-contractor-murphy-in-125-billion-deal"],
+ ["Seeking Alpha, Brookfield agrees to buy PGP Glass from Blackstone for $1.7bn (23 Nov 2026)","https://seekingalpha.com/news/4675431-brookfield-agrees-to-buy-pgp-glass-from-blackstone-for-17b"],
+ ["Republic, Adani Ports to acquire Evos (5 Nov 2026)","https://www.republicworld.com/initiatives/adani-ports-to-acquire-europe-s-second-largest-liquid-storage-operator-evos-in-eur-256-billion-deal-2026-11-05-140510"],
+ ["ThePrint, Tata Steel to acquire 26.4% of APL Apollo Tubes for $1.7bn (23 Nov 2026)","https://theprint.in/economy/tata-steel-to-acquire-26-4-stake-in-apl-apollo-tubes-for-1-7-billion/3106137/"],
+ ["T&D World, GE Vernova to acquire Trench Group (Oct 2026)","https://www.tdworld.com/utility-business/news/55414990/ge-vernova-to-acquire-trench-group-for-9-billion"]
 ];
 /* s = [0–12m, 1–3y, 3–10y] on a −2 (strong threat) … +2 (strong opportunity) scale. Our view, not investment advice. */
 const SEC={
- tmt:{n:"TMT",f:"Technology, Media & Telecommunications",src:[0,1,5,2,22,18,24,25,26,35],k:"$1.1tn",kl:"Tech M&A, 9M26 (+36%)",
-  w:"Local limits on data centres after the midterms; AI valuation reset.",
-  r:{Global:{s:[1,2,2],n:"Tech led global M&A again ($1.1tn in 9M26). October added Schneider–PTC ($22.6bn, industrial AI software) and DoorDash–Instacart ($17bn)."},
-   AMER:{s:[0,1,2],n:"Voters backed limits in 39 of 45 local data-centre ballot measures; UBS sees ~30% of planned 2028 US capacity at risk. The Nasdaq fell 4.8% on 5 Nov."},
+ tmt:{n:"TMT",f:"Technology, Media & Telecommunications",src:[0,1,5,2,22,18,24,25,26,35,40,41,42,43,44],upd:"2026-11-23T05:30Z",updL:"23 Nov 2026 (reviewed)",k:"$1.1tn",kl:"Tech M&A, 9M26 (+36%)",
+  w:"US stocks entered a correction on 20 Nov (Nasdaq −5.28% that day); local limits on data centres after the midterms.",
+  r:{Global:{s:[1,2,2],n:"Tech led global M&A again ($1.1tn in 9M26). November added Marvell–Lumentum ($115bn, 2 Nov), TPG with Corpay–BILL ($6bn, 19 Nov) and Palo Alto Networks–Applied Compute ($4.5bn, 18 Nov)."},
+   AMER:{s:[0,1,2],n:"Voters backed limits in 39 of 45 local data-centre ballot measures; UBS sees ~30% of planned 2028 US capacity at risk. The Nasdaq fell 4.8% on 5 Nov and 5.28% on 20 Nov, when the S&P 500 entered a correction; deals still signed (TPG–BILL, Bending Spoons–Mailchimp)."},
    EMEA:{s:[1,1,2],n:"Tech deal value +89% (Jan–May). Telcos consolidate fibre and sell towers; AI adoption lags the US."},
    APAC:{s:[1,1,2],n:"Only region where tech value and volume both grew. China consolidates chips under its self-reliance push."},
-   LATAM:{s:[0,1,1],n:"Digital infrastructure and fintech platforms; deals are small and FX-sensitive."},
+   LATAM:{s:[0,1,1],n:"Telecom consolidation: Millicom (Tigo) agreed to buy Entel Peru (~$1.7bn, 13 Nov). Deals stay small and FX-sensitive."},
    MENA:{s:[0,1,2],n:"Tech/AI is the top sector for Gulf sovereign funds, but the war has delayed local IPOs and closings."},
    ANZ:{s:[1,1,1],n:"Data centres and digital platforms; tech was APAC's most active sector by volume (+33%)."}}},
- health:{n:"Healthcare",f:"Healthcare & Life Sciences",src:[12,13,1,2,22,27],k:"$346bn",kl:"Healthcare M&A, H1 2026 (+35%)",
+ health:{n:"Healthcare",f:"Healthcare & Life Sciences",src:[12,13,1,2,22,27,45,46],upd:"2026-11-23T05:30Z",updL:"23 Nov 2026 (reviewed)",k:"$346bn",kl:"Healthcare M&A, H1 2026 (+35%)",
   w:"US drug-pricing policy; tariffs on pharma supply chains.",
   r:{Global:{s:[2,2,1],n:"Patent expiries put ~$300bn of pharma revenue at risk by 2030. Upfront deal value hit $64bn by April vs $24.5bn a year earlier."},
-   AMER:{s:[2,2,1],n:"Merck, Lilly and Gilead buy biotech pipelines (oncology, immunology). Pricing policy is the long-run risk."},
+   AMER:{s:[2,2,1],n:"Pipelines and services stay in demand: Lilly–Calytrix Bio ($1.5bn, 16 Nov) and HealthSpan's raised $6bn offer for Surgery Partners (9 Nov). Pricing policy is the long-run risk."},
    EMEA:{s:[1,1,1],n:"Private equity takes tools private: EQT, with ADIA and CPP, agreed to buy QIAGEN for $12.1bn (21 Oct). Novartis and UCB keep buying pipelines."},
    APAC:{s:[2,2,2],n:"Sun Pharma–Organon ($11.75bn) is India's largest-ever pharma deal; Hong Kong IPOs reopen exits for China."},
    LATAM:{s:[0,1,1],n:"Hospital and diagnostics consolidation in Brazil; high rates cap leverage."},
    MENA:{s:[0,1,2],n:"Gulf states localise pharma and expand private healthcare; the war has pushed timelines out."},
    ANZ:{s:[1,1,1],n:"Healthcare is among Australia's most active deal sectors; private hospitals are restructuring."}}},
- fig:{n:"FIG",f:"Financial Institutions Group",src:[6,2,1,22,28,29,36],k:"108",kl:"BCG sentiment, finance & real estate (highest)",
+ fig:{n:"FIG",f:"Financial Institutions Group",src:[6,2,1,22,28,29,36,47,48,49,50],upd:"2026-11-23T05:30Z",updL:"23 Nov 2026 (reviewed)",k:"108",kl:"BCG sentiment, finance & real estate (highest)",
   w:"Credit losses if inflation keeps rates high; the Fed held at 3.75–4.00% on 28 Oct.",
   r:{Global:{s:[1,1,1],n:"Fewer but bigger deals, with megadeals ~half of value: Corebridge–Equitable ($22bn), Nuveen–Schroders ($12.9bn). Private credit tops $2tn."},
-   AMER:{s:[1,2,1],n:"Lighter regulation supports regional-bank deals (Huntington–Cadence, Santander–Webster); banks buy fintech (Capital One–Brex)."},
-   EMEA:{s:[2,1,1],n:"Intesa raised its ~€35bn Monte dei Paschi bid; on 29 Oct MPS shareholders rejected the defence plan (>90% against the Banco BPM and Banca Generali offers), clearing Intesa's path."},
-   APAC:{s:[0,1,1],n:"Japanese insurers and banks buy abroad; domestic bank deals are slow."},
+   AMER:{s:[1,2,1],n:"Lighter regulation supports regional-bank deals (Huntington–Cadence, Santander–Webster); banks buy fintech (Capital One–Brex). Hancock Whitney agreed to buy Trustmark ($3.2bn, 12 Nov)."},
+   EMEA:{s:[2,1,1],n:"Intesa raised its ~€35bn Monte dei Paschi bid; on 29 Oct MPS shareholders rejected the defence plan (>90% against the Banco BPM and Banca Generali offers), clearing Intesa's path; the offer document was published on 10 Nov and the offer opens on 24 Nov. Mubadala and Centerbridge agreed to buy Canaccord Wealth's UK arm ($1.54bn, 16 Nov)."},
+   APAC:{s:[0,1,1],n:"Japanese insurers and banks buy abroad, but Challenger rejected TAL Dai-ichi Life's sweetened offer (18 Nov); domestic bank deals are slow."},
    LATAM:{s:[0,0,1],n:"Digital banks scale, but high rates and FX swings hold back bank M&A."},
    MENA:{s:[-1,0,1],n:"War lifted funding costs and credit risk; bank deals wait for clarity on Hormuz."},
    ANZ:{s:[0,1,1],n:"Wealth and super consolidation (Bain–Perpetual Wealth); the ACCC opposed IAG–RAC Insurance."}}},
- energy:{n:"Energy & Power",f:"Energy, Power & CleanTech",src:[7,1,4,14,3,17,30,33,34,37],k:"+95%",kl:"Power & renewables M&A, H1 2026",
+ energy:{n:"Energy & Power",f:"Energy, Power & CleanTech",src:[7,1,4,14,3,17,30,33,34,37,51,52,53,54],upd:"2026-11-23T05:30Z",updL:"23 Nov 2026 (reviewed)",k:"+95%",kl:"Power & renewables M&A, H1 2026",
   w:"US–Iran talks are 'hope, not a deal'; Brent fell 8% to ~$104 on 2 Nov.",
-  r:{Global:{s:[2,2,1],n:"Reliability is the thesis: NextEra–Dominion ($67bn) leads. World Bank sees Brent at $91 in 2026 and $79 in 2027."},
-   AMER:{s:[2,2,1],n:"EQT–Range (26 Oct, all-stock) creates the largest US gas producer (EV >$50bn); Emera–Canadian Utilities ($10bn) bets on power demand."},
+  r:{Global:{s:[2,2,1],n:"Reliability is the thesis: NextEra–Dominion ($67bn) leads; FERC authorised the GIP/EQT-led ~$33.4bn AES takeover (17 Nov) and LS Power agreed to buy six NRG gas plants ($4bn, 9 Nov). World Bank sees Brent at $91 in 2026 and $79 in 2027."},
+   AMER:{s:[2,2,1],n:"EQT–Range (26 Oct, all-stock) creates the largest US gas producer (EV >$50bn); Emera–Canadian Utilities ($10bn) bets on power demand. November added Diamondback–Double Eagle ($5bn) and Canadian Natural–Advantage ($1.8bn)."},
    EMEA:{s:[1,1,2],n:"Grids are prized (ENGIE–UK Power Networks, $14.2bn); renewables reprice; energy security speeds the transition."},
    APAC:{s:[1,1,2],n:"Japan buys US gas (Mitsubishi–Aethon); fuel-short importers add clean power fastest."},
    LATAM:{s:[1,1,1],n:"Energy, mining and utilities was LatAm's top sector: $23.7bn in H1 (+18%)."},
    MENA:{s:[-1,-1,1],n:"Iran's leader approved talks; crude flows through Hormuz revived in October, but no deal reopens the Strait yet. IMF sees Saudi GDP −3.3% in 2026."},
    ANZ:{s:[1,1,1],n:"Resource and energy exports near A$422bn in 2026-27; LNG and transition assets in demand."}}},
- consumer:{n:"Consumer",f:"Consumer & Retail",src:[8,11,15,3,26,32],k:"−12%",kl:"Consumer deal volume, 2026e",
+ consumer:{n:"Consumer",f:"Consumer & Retail",src:[8,11,15,3,26,32],upd:"2026-11-23T05:30Z",updL:"23 Nov 2026 (reviewed, no change)",k:"−12%",kl:"Consumer deal volume, 2026e",
   w:"4.7% global inflation hits real incomes.",
   r:{Global:{s:[-1,0,1],n:"Volumes heading −12% in 2026; capital flows only to category leaders. McCormick–Unilever Foods ($44.8bn) is the year's biggest."},
    AMER:{s:[0,0,1],n:"October brought DoorDash–Instacart ($17bn) and Penske Automotive's $16.3bn take-private by Penske Corp. and Mitsui; scale buyers still pay for channels."},
@@ -2667,16 +2691,16 @@ const SEC={
    LATAM:{s:[-1,0,1],n:"High rates and FX volatility; buyers stay selective."},
    MENA:{s:[-2,-1,1],n:"Dubai hotel occupancy fell to 23% in March; regional arrivals seen −11–27% in 2026."},
    ANZ:{s:[0,0,1],n:"Cost-of-living pressure; selective retail and agri-food deals."}}},
- industrials:{n:"Industrials",f:"Industrials & Aerospace",src:[9,2,19,3,25,31],k:"+14%",kl:"Aerospace & defence deal volume, 2026e",
+ industrials:{n:"Industrials",f:"Industrials & Aerospace",src:[9,2,19,3,25,31,55,56,57,58,59,60,62],upd:"2026-11-23T05:30Z",updL:"23 Nov 2026 (reviewed)",k:"+14%",kl:"Aerospace & defence deal volume, 2026e",
   w:"Tariffs, European energy costs, auto overcapacity.",
   r:{Global:{s:[1,1,2],n:"Deal value seen +9%; defence, electrification and AI infrastructure lead. Autos face overcapacity and divestitures."},
-   AMER:{s:[1,1,1],n:"Reshoring and data-centre build-out (Baker Hughes–Chart, $13.6bn); tariffs cloud supply chains."},
+   AMER:{s:[1,1,1],n:"Take-privates and defence tech: Thrive–ADT ($15.3bn, 29 Oct), Shield AI–Echodyne ($5.3bn, 5 Nov) and MasTec–Murphy ($1.25bn, 20 Nov); tariffs cloud supply chains."},
    EMEA:{s:[1,2,2],n:"Chemicals consolidate: BASF approached Evonik (~€11.2bn reported), but Evonik declined talks on 30 Oct. Schneider–PTC ($22.6bn) adds industrial AI software."},
-   APAC:{s:[1,1,1],n:"The only region with volume growth; Daimler Truck–Toyota (Fuso–Hino); China's EV shake-out."},
+   APAC:{s:[2,1,1],n:"Raised to Strong opportunity (0–12m) on 23 Nov: Mitsui Chemicals and DBJ agreed to take chip-materials maker JSR private ($11.6bn, 9 Nov), Adani Ports agreed to buy Evos ($2.9bn, 5 Nov) and Brookfield agreed to buy PGP Glass ($1.7bn, 23 Nov)."},
    LATAM:{s:[0,1,1],n:"Nearshoring into Mexico supports logistics and manufacturing deals."},
    MENA:{s:[-1,0,2],n:"Air capacity fell 55–60% at the peak; defence demand surges; reconstruction is a long-run opportunity."},
    ANZ:{s:[0,1,1],n:"Defence and infrastructure (Transurban's A$4.5bn toll-road stakes)."}}},
- regal:{n:"REGAL",f:"Real Estate, Gaming & Lodging",src:[10,11,15,22,24,38],k:"~$69bn",kl:"AvalonBay–Equity Residential REIT merger",
+ regal:{n:"REGAL",f:"Real Estate, Gaming & Lodging",src:[10,11,15,22,24,38],upd:"2026-11-23T05:30Z",updL:"23 Nov 2026 (reviewed, no change)",k:"~$69bn",kl:"AvalonBay–Equity Residential REIT merger",
   w:"Refinancing walls at higher-for-longer rates.",
   r:{Global:{s:[0,1,1],n:"REITs scale up (AvalonBay–Equity Residential); data centres are the hottest asset; two large casino deals lift leisure value."},
    AMER:{s:[1,1,1],n:"REITs keep merging (IRT–Centerspace, $8.1bn). Local data-centre limits after the midterms may slow new US capacity, raising the value of existing sites."},
@@ -2685,12 +2709,12 @@ const SEC={
    LATAM:{s:[0,0,1],n:"High rates keep property deals small and selective."},
    MENA:{s:[-2,-1,1],n:"Dubai lost 60% of hotel bookings within 48 hours; Gulf hotel prices reset, which may create entry points."},
    ANZ:{s:[0,0,1],n:"Rate-sensitive; infrastructure and data-centre assets preferred."}}},
- resources:{n:"Metals & Mining",f:"Natural Resources, Metals & Mining",src:[4,20,7,21,2,39],k:"+25%",kl:"Metals prices in 2026, to a record (World Bank)",
+ resources:{n:"Metals & Mining",f:"Natural Resources, Metals & Mining",src:[4,20,7,21,2,39,61],upd:"2026-11-23T05:30Z",updL:"23 Nov 2026 (reviewed)",k:"+25%",kl:"Metals prices in 2026, to a record (World Bank)",
   w:"Permitting delays and resource nationalism.",
   r:{Global:{s:[1,2,2],n:"World Bank: metals +25% and precious metals +40% in 2026; gold closed at ~$4,070/oz on 6 Nov. Anglo–Teck (~$53bn) builds a copper giant."},
    AMER:{s:[1,2,2],n:"North American gold and copper consolidation (Equinox–Orla); governments take stakes in critical minerals."},
    EMEA:{s:[0,1,1],n:"African copper and rare earths (Namibia's Lofdal); Europe pushes local processing."},
-   APAC:{s:[1,1,1],n:"Chinese and Japanese buyers chase supply (Zijin–Allied Gold, $4bn)."},
+   APAC:{s:[1,1,1],n:"Chinese and Japanese buyers chase supply (Zijin–Allied Gold, $4bn); Tata Steel agreed to buy 26.4% of APL Apollo Tubes ($1.7bn, 23 Nov)."},
    LATAM:{s:[1,2,2],n:"Chile, Peru and Argentina copper and lithium; mining leads LatAm deal value."},
    MENA:{s:[0,1,1],n:"Saudi mining ambitions continue, but the war slows capital."},
    ANZ:{s:[2,2,2],n:"Gold and critical-minerals pipeline shows little sign of slowing; materials led recent Australian deals."}}}
@@ -3656,7 +3680,7 @@ ME:[
       g.querySelector(".mgd-x").onclick=close;g.addEventListener("click",e=>{if(e.target===g)close()});g.addEventListener("keydown",e=>{if(e.key==="Escape")close()});
       f.onsubmit=e=>{e.preventDefault();err.hidden=true;const n=f.name.value.trim(),m=f.email.value.trim();if(!n){err.textContent="Please enter your name.";err.hidden=false;return}if(!m||!f.email.checkValidity()){err.textContent="Please enter a valid email address.";err.hidden=false;return}if(!f.consent.checked){err.textContent="Please tick the box to join the mailing list.";err.hidden=false;return}
         try{localStorage.setItem("mg-dl-signup",JSON.stringify({email:m,date:new Date().toISOString()}))}catch(_){}
-        try{window.open(`mailto:${LEAD_EMAIL}?subject=${encodeURIComponent("Mailing list: Funding Finder shortlist")}&body=${encodeURIComponent("Please add me to the Meridian Briefing mailing list.\nName: "+n+"\nEmail: "+m+"\nShortlist: "+short.join(", "))}`,"_blank")}catch(_){}
+        MG_POST({name:n,email:m,shortlist:short.join(", "),source:"Funding Finder shortlist"},"Mailing list: Funding Finder shortlist — "+n).then(ok=>{if(!ok){try{window.open(`mailto:${LEAD_EMAIL}?subject=${encodeURIComponent("Mailing list: Funding Finder shortlist")}&body=${encodeURIComponent("Please add me to the Meridian Briefing mailing list.\nName: "+n+"\nEmail: "+m+"\nShortlist: "+short.join(", "))}`,"_blank")}catch(_){}}});
         close();if(g._cb)setTimeout(g._cb,80)}}
     g._cb=cb;g.hidden=false;document.body.classList.add("mgd-open");setTimeout(()=>g.querySelector("input[name=name]").focus(),30)}
   grid.onclick=e=>{const b=e.target.closest(".ff-help");if(!b)return;const p=document.getElementById("ld-prog"),n=b.dataset.n,cur=p.value.split(",").map(s=>s.trim()).filter(Boolean);if(!cur.includes(n))cur.push(n);p.value=cur.join(", ");document.getElementById("lead").scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"});setTimeout(()=>document.getElementById("ld-name").focus({preventScroll:true}),400)};
@@ -3677,7 +3701,7 @@ ME:[
     done.hidden=false;
     if(!data.name||!/^\S+@\S+\.\S+$/.test(data.email)){done.style.background="var(--thr-bg)";done.textContent="Please add your name and a valid email address.";return}
     done.style.background="";
-    if(LEAD_ENDPOINT){try{const r=await fetch(LEAD_ENDPOINT,{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify(data)});if(r.ok){done.textContent=`Thanks, ${data.name}. Your request is in. We'll be in touch with your shortlist within two working days.`;e.target.reset();return}}catch(_){}}
+    {try{if(await MG_POST(Object.assign({source:"Funding Finder request"},data),"Funding Finder request — "+data.name)){done.textContent=`Thanks, ${data.name}. Your request is in. We'll be in touch with your shortlist within two working days.`;e.target.reset();return}}catch(_){}}
     const text=Object.entries(data).filter(([,x])=>x).map(([k,x])=>`${k}: ${x}`).join("\n");
     done.innerHTML=`<b>Thanks, ${esc(data.name)}.</b><span>This preview isn't connected to an inbox yet. Copy your details and email them to <b>${LEAD_EMAIL}</b>.</span><pre id="lead-text"></pre><button class="btn ghost" type="button" id="lead-copy">Copy details</button>`;
     document.getElementById("lead-text").textContent=text;
@@ -3912,7 +3936,7 @@ ME:[
     const oth=f.querySelector('.sub-other');const topics=[...f.querySelectorAll('input[name=t]:checked')].map(x=>x.value==='Other'&&oth&&oth.value.trim()?'Other: '+oth.value.trim():x.value);
     const data={email:em.value.trim(),topics:topics.join(", "),source:"Meridian website",date:new Date().toISOString()};
     done.hidden=false;done.className="sub-done";
-    if(SUB_ENDPOINT){try{const r=await fetch(SUB_ENDPOINT,{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify(data)});if(r.ok){done.innerHTML="<b>You're on the list.</b> Watch your inbox for the next Meridian Briefing.";f.reset();return}}catch(_){}}
+    {try{if(await MG_POST(data,"Subscribe: Meridian Briefing — "+data.email)){done.innerHTML="<b>You're on the list.</b> Watch your inbox for the next Meridian Briefing.";f.reset();return}}catch(_){}}
     const body=encodeURIComponent("Please subscribe me to the Meridian Briefing.\nEmail: "+data.email+"\nTopics: "+(data.topics||"All"));
     done.innerHTML=`<b>Almost there.</b> Send the email that just opened to confirm, or write to <a href="mailto:${SUB_EMAIL}">${SUB_EMAIL}</a>.`;
     location.href=`mailto:${SUB_EMAIL}?subject=${encodeURIComponent("Subscribe: Meridian Briefing")}&body=${body}`;
@@ -3938,7 +3962,7 @@ const upd=()=>{const on=s.value==="Other";w.hidden=!on;i.required=on;if(on)i.foc
     if(!rating&&!msg){done.className="fb-done err";done.textContent="Please choose a rating or write a short note.";return}
     if(f.email.value&&!f.email.checkValidity()){done.className="fb-done err";done.textContent="Please check your email address, or leave it blank.";return}
     const data={rating,about:f.about.value,feedback:msg,name:f.name.value.trim(),email:f.email.value.trim(),page:location.hash||"#home",date:new Date().toISOString()};
-    if(FB_ENDPOINT){try{const r=await fetch(FB_ENDPOINT,{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify(data)});if(r.ok){done.innerHTML="<b>Thank you.</b> Your feedback is in and will shape what we publish next.";f.reset();rt.textContent="Tap a star";return}}catch(_){}}
+    {try{if(await MG_POST(data,"Website feedback: "+(data.rating?data.rating+"/5":data.about))){done.innerHTML="<b>Thank you.</b> Your feedback is in and will shape what we publish next.";f.reset();rt.textContent="Tap a star";return}}catch(_){}}
     const body=encodeURIComponent(`Rating: ${rating||"-"}/5\nAbout: ${data.about}\n\n${msg}\n\nFrom: ${data.name||"Anonymous"} ${data.email}`);
     done.innerHTML=`<b>Thank you.</b> Send the email that just opened to share it, or write to <a href="mailto:${FB_EMAIL}">${FB_EMAIL}</a>.`;
     location.href=`mailto:${FB_EMAIL}?subject=${encodeURIComponent("Website feedback: "+(rating?rating+"/5":data.about))}&body=${body}`;
@@ -5904,6 +5928,8 @@ const CALLS=[
  {d:"2026-11-01",sec:"Consumer",reg:"Americas",h:"0–12m",from:-1,to:0,rv:"2026-11-08",v:"upgrade",t:"Called Threat on 1 Nov; raised to Neutral on 8 Nov after October's DoorDash–Instacart ($17bn) and Penske Automotive ($16.3bn) deals. Both pre-dated the call, so this is a late update.",src:["dash","penske"]},
  {d:"2026-11-01",sec:"Energy",reg:"Americas",h:"0–12m",from:2,to:2,v:"open",t:"Strong opportunity. Consistent with EQT–Range (26 Oct) and Emera–Canadian Utilities (6 Oct); to be scored at the 12-month mark (Nov 2027).",src:["range","emera"]},
  {d:"2026-11-01",sec:"Metals & Mining",reg:"Global",h:"0–12m",from:1,to:1,v:"open",t:"Opportunity. Gold closed at ~$4,070/oz on 6 Nov; to be scored against mining deal value in Nov 2027.",src:["te"]}
+,
+ {d:"2026-11-23",sec:"Industrials",reg:"Asia-Pacific",h:"0–12m",from:1,to:2,v:"open",t:"Raised to Strong opportunity on 23 Nov after Mitsui Chemicals and DBJ agreed to take JSR private ($11.6bn, 9 Nov), Adani Ports agreed to buy Evos ($2.9bn, 5 Nov) and Brookfield agreed to buy PGP Glass ($1.7bn, 23 Nov); to be scored in Nov 2027.",src:["jsr","evos","pgp"]}
 ];window.evCALLS=CALLS;
 /* Country fact sheets */
 const C={
@@ -6427,7 +6453,7 @@ function openGate(cb){gateCb=cb;if(!gate){gate=document.createElement("div");gat
   if(!d.name){err.textContent="Please enter your name.";err.hidden=false;return}if(!d.email||!f.email.checkValidity()){err.textContent="Please enter a valid email address.";err.hidden=false;return}if(!f.consent.checked){err.textContent="Please tick the box to join the mailing list.";err.hidden=false;return}
   try{localStorage.setItem("mg-dl-signup",JSON.stringify({email:d.email,date:new Date().toISOString()}))}catch(_){}
   const body=encodeURIComponent("Please add me to the Meridian Briefing mailing list.\nName: "+d.name+"\nEmail: "+d.email+"\nCompany: "+(d.company||"-")+"\nRole: "+(d.role||"-")+"\nSource: Deal Desk Monday brief");
-  try{window.open(`mailto:${DESK_EMAIL}?subject=${encodeURIComponent("Mailing list: Monday Deal Brief")}&body=${body}`,"_blank")}catch(_){}
+  MG_POST(Object.assign({source:"Deal Desk Monday brief"},d),"Mailing list: Monday Deal Brief — "+d.name).then(ok=>{if(!ok)try{window.open(`mailto:${DESK_EMAIL}?subject=${encodeURIComponent("Mailing list: Monday Deal Brief")}&body=${body}`,"_blank")}catch(_){}});
   close();paintLock();if(gateCb)setTimeout(gateCb,80)})}
  gate.hidden=false;document.body.classList.add("mgd-open");setTimeout(()=>gate.querySelector("input[name=name]").focus(),30)}
 const DESK_EMAIL="info@meridianglobalintel.com";
@@ -6700,7 +6726,7 @@ function stamps(){
  addStamp("#insights .sec-head",stamp(BUILD,"Newest article published at this time"));
  const igh=document.querySelector("#ig .ig-head > div");
  if(igh){const set=()=>{const t=document.querySelector(".sec-tab[aria-selected='true']"),k=t?t.dataset.s:"tmt";let s=igh.querySelector(".ev-stamp-wrap");if(!s){s=document.createElement("div");s.className="ev-stamp-wrap";igh.appendChild(s)}s.innerHTML=stamp(IGT[k]||"","When this sector's globe data was last published")};set();document.querySelectorAll(".sec-tab").forEach(t=>t.addEventListener("click",()=>setTimeout(set,30)))}
- const dcg=$("dcg");if(dcg){const add=()=>{if(!dcg.querySelector(".ev-stamp")){const s=dcg.querySelector(".dcg-s");if(s)s.insertAdjacentHTML("afterend",`<div>${stamp("Sector scores 8 Nov 2026, 15:21 GMT · factors "+BUILD)}</div>`)}};add();setTimeout(add,1500)}
+ const dcg=$("dcg");if(dcg){const add=()=>{if(!dcg.querySelector(".ev-stamp")){const s=dcg.querySelector(".dcg-s");if(s)s.insertAdjacentHTML("afterend",`<div>${stamp("Sector scores reviewed 23 Nov 2026 · factors "+BUILD)}</div>`)}};add();setTimeout(add,1500)}
  document.querySelectorAll('.ev-stamp[data-stamp="build"]').forEach(s=>s.innerHTML="Last updated: <b>"+BUILD+"</b>");
 }
 
@@ -8608,7 +8634,7 @@ f.addEventListener("submit",async e=>{e.preventDefault();err.hidden=true;
  if(!f.consent.checked){err.textContent="Please tick the box to join the mailing list.";err.hidden=false;return}
  const data=Object.assign({source:"Founder Toolkit download",template:pending?pending.dataset.f:"",date:new Date().toISOString()},d);
  let sent=false;
- if(MG_DL.endpoint){try{const r=await fetch(MG_DL.endpoint,{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify(data)});sent=r.ok}catch(_){}}
+ sent=await MG_POST(data,"Mailing list: Founder Toolkit download — "+data.name);
  ok=true;try{localStorage.setItem(KEY,JSON.stringify({email:d.email,date:data.date}))}catch(_){}
  document.getElementById("mgd-lock").textContent="✓ You're on our mailing list — downloads are unlocked.";
  grid.querySelectorAll(".sx-tp em").forEach(x=>x.textContent="Download ↓");
@@ -8789,7 +8815,7 @@ f.addEventListener("submit",async e=>{e.preventDefault();e.stopImmediatePropagat
  if(["Phone call","WhatsApp"].includes(data.contact_by)&&!data.phone){document.getElementById("f-phone").focus();return bad("Please add your phone number so we can reach you by "+(data.contact_by==="WhatsApp"?"WhatsApp":"phone")+".")}
  if(data.phone&&!/^\+?[0-9 ()\-.]{6,20}$/.test(data.phone))return bad("Please check the phone number, or leave it blank.");
  note.style.color="";
- if(CONTACT.endpoint){try{const r=await fetch(CONTACT.endpoint,{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify(data)});if(r.ok){note.innerHTML=`<b>Thank you, ${data.name.replace(/[<>&]/g,"")}.</b> Your enquiry is in. We aim to reply within two working days.`;f.reset();syncQ();return}}catch(_){}}
+ {try{if(await MG_POST(data,"Enquiry: "+data.interest+" — "+data.name)){note.innerHTML=`<b>Thank you, ${data.name.replace(/[<>&]/g,"")}.</b> Your enquiry is in. We aim to reply within two working days.`;f.reset();syncQ();return}}catch(_){}}
  const text=Object.entries(data).filter(([k,x])=>x&&k!=="date").map(([k,x])=>k+": "+x).join("\n");
  note.innerHTML=`<b>Thank you, ${data.name.replace(/[<>&]/g,"")}.</b> Your email app should open with your enquiry ready to send. If it doesn't, copy your details below.<pre id="f-text"></pre><button class="btn ghost" type="button" id="f-copy">Copy details</button>`;
  document.getElementById("f-text").textContent=text;
@@ -10958,7 +10984,7 @@ al.querySelector("form").addEventListener("submit",async e=>{e.preventDefault();
  const data={email:em.value.trim(),list:"Market Weather alerts",alerts:picks.join(", "),frequency:fq,watching:pinned||"",source:"Meridian website · Market weather station",date:new Date().toISOString()};
  const C=window.MG_SUB||{},EP=C.endpoint||"",MAIL=C.email||"info@meridianglobalintel.com";
  done.hidden=false;done.className="mw-done";ls.set("mw-sub",picks.join(", "));
- if(EP){try{const r=await fetch(EP,{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify(data)});if(r.ok){done.innerHTML="<b>You're subscribed, free.</b> Your first Market Weather alert will arrive with the next update.";return}}catch(_){}}
+ {try{if(await MG_POST(data,"Subscribe: Market Weather alerts — "+data.email)){done.innerHTML="<b>You're subscribed, free.</b> Your first Market Weather alert will arrive with the next update.";return}}catch(_){}}
  const body=encodeURIComponent(`Please subscribe me to Market Weather alerts (free).\nEmail: ${data.email}\nAlerts: ${data.alerts}\nFrequency: ${fq}${pinned?"\nWatching: "+pinned:""}`);
  done.innerHTML=`<b>Almost there.</b> Send the email that just opened to confirm your free subscription, or write to <a href="mailto:${MAIL}">${MAIL}</a>.`;
  location.href=`mailto:${MAIL}?subject=${encodeURIComponent("Subscribe: Market Weather alerts")}&body=${body}`});
@@ -13284,6 +13310,59 @@ footer .ft-credits .ft-credit{display:inline}</style>
   window.mgCoach={run:run,stop:stop,tours:{markets:MG,industry:IG,pages:PT}};
 })();
 </script>
+<style id="dcg-3d-v2">
+/* Global Deal Climate: 3D glass card (v2) */
+.dcg{position:relative;isolation:isolate;overflow:visible;padding:20px 22px 18px!important;border-radius:20px!important;border:1px solid rgba(212,167,44,.45)!important;
+ background:radial-gradient(120% 80% at 15% 0%,rgba(46,160,150,.35) 0%,transparent 55%),radial-gradient(90% 70% at 100% 100%,rgba(212,167,44,.18) 0%,transparent 60%),linear-gradient(155deg,#0F3E42 0%,#0B2A33 55%,#08202A 100%)!important;
+ box-shadow:0 1px 0 rgba(255,255,255,.18) inset,0 -2px 0 rgba(0,0,0,.35) inset,0 7px 0 #0A2C33,0 12px 0 #072027,0 14px 0 rgba(212,167,44,.35),0 30px 50px -10px rgba(8,32,42,.55),0 0 0 1px rgba(255,255,255,.04)!important;
+ transform:none;transition:transform .5s cubic-bezier(.2,.8,.2,1),box-shadow .5s;-webkit-font-smoothing:antialiased;margin-bottom:22px!important;color:#E6F0EE}
+.dcg::before{content:"";position:absolute;inset:0;border-radius:inherit;z-index:-1;pointer-events:none;
+ background:linear-gradient(115deg,transparent 30%,rgba(255,255,255,.09) 45%,transparent 60%) 0 0/250% 100% no-repeat;animation:dcgSheen 7s ease-in-out infinite}
+.dcg::after{content:"";position:absolute;left:8%;right:8%;bottom:-26px;height:18px;border-radius:50%;z-index:-2;background:radial-gradient(closest-side,rgba(8,32,42,.45),transparent);filter:blur(4px)}
+@keyframes dcgSheen{0%,55%{background-position:120% 0}100%{background-position:-120% 0}}
+@media (hover:hover){.dcg:hover{transform:translateY(-3px)}}
+.dcg-main{align-items:center!important;flex-direction:row!important;gap:18px!important;flex-wrap:wrap}
+.dcg .dcg-3d{width:240px;height:156px;max-width:100%;filter:drop-shadow(0 6px 10px rgba(0,0,0,.45)) drop-shadow(0 0 14px rgba(46,160,150,.25))!important}
+.dcg .dcg-tk{fill:#9FB7B4}
+.dcg .dcg-needle{filter:drop-shadow(0 0 4px rgba(247,227,161,.8))}
+.dcg .dcg-k{color:#E8C766!important;letter-spacing:.16em}
+.dcg .dcg-t>b{font-size:2.8rem!important;color:#fff!important;text-shadow:0 1px 0 #0B2A33,0 2px 0 #08202A,0 3px 0 #061820,0 8px 16px rgba(0,0,0,.5),0 0 22px rgba(232,199,102,.25)!important}
+.dcg .dcg-t>b small{color:#9FB7B4!important}
+.dcg .dcg-l{color:#F7E3A1!important}
+.dcg .dcg-i{background:rgba(255,255,255,.08);border-color:#E8C766;color:#E8C766}
+.dcg .dcg-hz,.dcg .dcg-s,.dcg .dcg-src,.dcg .dcg-c{color:#B9CCC9!important}
+.dcg .dcg-hz b,.dcg .dcg-c b{color:#fff!important}
+.dcg .dcg-hz em.up{color:#6FD3A0}.dcg .dcg-hz em.dn{color:#F59A8B}
+.dcg .dcg-cs{border-top:1px solid rgba(232,199,102,.25)!important;padding-top:12px}
+.dcg .dcg-c{transition:transform .2s,background .2s}
+.dcg .dcg-c:hover,.dcg .dcg-c:focus{background:rgba(255,255,255,.06)!important;transform:translateX(3px)}
+.dcg .dcg-c i{height:10px;background:rgba(0,0,0,.35)!important;box-shadow:inset 0 2px 3px rgba(0,0,0,.5),0 1px 0 rgba(255,255,255,.08)!important}
+.dcg .dcg-c em{box-shadow:inset 0 1px 0 rgba(255,255,255,.55),inset 0 -2px 0 rgba(0,0,0,.2),0 0 10px rgba(111,211,160,.35)!important}
+.dcg .dcg-ex span{background:rgba(111,211,160,.14)!important;color:#9BE6BE!important;border:1px solid rgba(111,211,160,.35);box-shadow:0 2px 0 rgba(0,0,0,.3),inset 0 1px 0 rgba(255,255,255,.12)!important;transition:transform .15s}
+.dcg .dcg-ex span.h{background:rgba(245,154,139,.14)!important;color:#F9B7AB!important;border-color:rgba(245,154,139,.35)}
+.dcg .dcg-ex span:hover{transform:translateY(-2px)}
+.dcg .dcg-s a,.dcg .dcg-src summary span,.dcg .dcg-src summary::before{color:#E8C766!important}
+.dcg .dcg-src a:hover{color:#F7E3A1}
+.dcg .ev-stamp{background:rgba(232,199,102,.12)!important;color:#F7E3A1!important;border:1px solid rgba(232,199,102,.35)!important}
+.dcg .ev-stamp{background:linear-gradient(180deg,rgba(255,255,255,.1),rgba(255,255,255,.03))!important;box-shadow:0 1px 0 rgba(255,255,255,.15) inset,0 3px 0 rgba(0,0,0,.35),0 9px 18px rgba(0,0,0,.3)!important;-webkit-text-fill-color:#F7E3A1!important;color:#F7E3A1!important;transform:none!important;filter:none!important;text-shadow:none!important;backdrop-filter:none!important}
+.dcg .ev-stamp:hover{transform:none!important}
+.dcg .ev-stamp *{opacity:1!important;filter:none!important;text-shadow:none!important;transform:none!important}
+.dcg .ev-stamp *{color:inherit!important;-webkit-text-fill-color:inherit!important}
+@media (max-width:560px){.dcg{transform:none}.dcg .dcg-3d{width:210px;height:137px}.dcg .dcg-t>b{font-size:2.3rem!important}}
+/* hero facts: 3D tiles */
+.hero-facts{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px!important;border-top:0!important;padding-top:6px!important;margin-bottom:18px}
+.hero-facts>div{position:relative;display:grid!important;grid-template-columns:auto 1fr;grid-template-rows:auto auto;column-gap:12px;row-gap:2px!important;align-items:center;padding:14px 16px!important;border-radius:16px;color:#E6F0EE;-webkit-font-smoothing:antialiased;
+ background:radial-gradient(120% 90% at 10% 0%,rgba(46,160,150,.35),transparent 60%),linear-gradient(155deg,#0F3E42,#0B2A33 60%,#08202A);border:1px solid rgba(212,167,44,.45);
+ box-shadow:0 1px 0 rgba(255,255,255,.16) inset,0 -2px 0 rgba(0,0,0,.35) inset,0 5px 0 #0A2C33,0 8px 0 #072027,0 9px 0 rgba(212,167,44,.35),0 18px 28px -8px rgba(8,32,42,.5);transition:transform .25s cubic-bezier(.2,.8,.2,1)}
+.hero-facts>div:hover{transform:translateY(-3px)}
+.hero-facts .hf-ic{grid-row:1/3;display:grid;place-items:center;width:40px;height:40px;border-radius:12px;color:#fff;font-style:normal;
+ background:radial-gradient(circle at 35% 30%,#F7E3A1,#D4A72C 55%,#7A5F12);box-shadow:0 1px 0 rgba(255,255,255,.6) inset,0 -2px 0 rgba(0,0,0,.25) inset,0 3px 0 #5E480D,0 6px 10px rgba(0,0,0,.35)}
+.hero-facts .hf-ic svg{filter:drop-shadow(0 1px 0 rgba(0,0,0,.35))}
+.hero-facts b{color:#fff!important;font-size:1.15rem!important;font-weight:600!important;text-shadow:0 1px 0 #061820,0 2px 6px rgba(0,0,0,.45)}
+.hero-facts span{color:#B9CCC9!important;font-size:.8rem!important}
+@media (max-width:420px){.hero-facts{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){.dcg,.dcg:hover{transform:none!important;transition:none}.dcg::before{animation:none}.hero-facts>div{transition:none!important}.hero-facts>div:hover{transform:none!important}}
+</style>
 
 
 </body></html>

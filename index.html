@@ -1371,6 +1371,11 @@ form.fb-card{background:linear-gradient(180deg,#FFFFFF,#FBFCFC);border:1px solid
     </div>
   </div>
 
+  <script>
+/* Form delivery: every website form is emailed to info@meridianglobalintel.com via FormSubmit. */
+window.MG_FORM="https://formsubmit.co/ajax/info@meridianglobalintel.com";
+window.MG_POST=async function(data,subject){try{const r=await fetch(window.MG_FORM,{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify(Object.assign({_subject:subject||"Website form",_template:"table",_captcha:"false",_replyto:data.email||""},data))});if(!r.ok)return false;const j=await r.json().catch(()=>({}));return j.success===true||j.success==="true"}catch(_){return false}};
+</script>
   <nav class="crumbs wrap" id="crumbs" aria-label="Breadcrumb" hidden></nav>
   <div class="page" data-page="home" data-title="Home">
   <section class="hero">

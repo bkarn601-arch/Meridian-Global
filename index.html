@@ -1380,7 +1380,7 @@ document.addEventListener("submit",e=>{const b=e.target&&e.target.querySelector&
   <!-- MG-ANALYTICS v1 -->
 <script>
 (function(){
-  var GA_ID='G-V18BCNS8D7', CF_TOKEN='__CF_TOKEN__';
+  var GA_ID='G-V18BCNS8D7', CF_TOKEN='6ed43d34957a49fcb90ec8e43f7db523';
   if(window.__mgA)return;window.__mgA=1;
   var live=/meridianglobalintel\.com$/.test(location.hostname);
   window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments)};
@@ -1391,7 +1391,7 @@ document.addEventListener("submit",e=>{const b=e.target&&e.target.querySelector&
     gtag('event','page_view',{page_location:location.origin+location.pathname+'#'+h,page_path:'/'+h,page_title:'Meridian · '+sec});}
   if(live&&GA_ID.indexOf('G-')===0){
     var s=document.createElement('script');s.async=1;s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;document.head.appendChild(s);
-    gtag('js',new Date());gtag('config',GA_ID,{send_page_view:false,anonymize_ip:true});page();
+    gtag('js',new Date());gtag('config',GA_ID,{page_location:location.href,page_title:'Meridian · '+((location.hash||'#home').slice(1).split(/[:/?]/)[0]||'home')});
     window.addEventListener('hashchange',page);
     document.addEventListener('click',function(e){var t=e.target.closest&&e.target.closest('a,button,[data-go],[data-dk],[data-st],[data-p],[role=tab]');if(!t)return;
       var lbl=(t.getAttribute('aria-label')||t.textContent||'').replace(/\s+/g,' ').trim().slice(0,60);
@@ -1399,7 +1399,7 @@ document.addEventListener("submit",e=>{const b=e.target&&e.target.querySelector&
       gtag('event','select_content',{content_type:t.tagName.toLowerCase(),item_id:String(key).slice(0,80),content_label:lbl,section:(location.hash||'#home').slice(1).split(/[:/?]/)[0]||'home'});},true);
     document.addEventListener('submit',function(e){var f=e.target;gtag('event','generate_lead',{form_id:f.id||f.getAttribute('name')||'form',section:(location.hash||'#home').slice(1)||'home'});},true);
   }
-  if(live&&CF_TOKEN.length>10){var c=document.createElement('script');c.defer=1;c.src='https://static.cloudflareinsights.com/beacon.min.js';c.setAttribute('data-cf-beacon',JSON.stringify({token:CF_TOKEN,spa:true}));document.head.appendChild(c);}
+  if(live&&CF_TOKEN.length>10&&CF_TOKEN.indexOf('__')!==0){var c=document.createElement('script');c.defer=1;c.src='https://static.cloudflareinsights.com/beacon.min.js';c.setAttribute('data-cf-beacon',JSON.stringify({token:CF_TOKEN,spa:true}));document.head.appendChild(c);}
   if(live&&!choice){var b=document.createElement('div');b.id='mg-cc';b.setAttribute('role','dialog');b.setAttribute('aria-label','Cookie choice');
     b.innerHTML='<p>We use analytics cookies to see which sections help readers most. No ads, no selling data.</p><div><button type="button" data-c="no">Decline</button><button type="button" data-c="yes">Accept</button></div>';
     var st=document.createElement('style');st.textContent='#mg-cc{position:fixed;left:16px;right:16px;bottom:16px;z-index:99999;max-width:560px;margin:0 auto;display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:14px 18px;border-radius:16px;background:#0A3E40;color:#E6F1EF;font:500 14px/1.4 Inter,system-ui,sans-serif;box-shadow:0 12px 40px rgba(0,0,0,.35);border:1px solid rgba(227,191,85,.45)}#mg-cc p{margin:0;flex:1 1 260px}#mg-cc div{display:flex;gap:8px}#mg-cc button{font:700 14px Inter,system-ui,sans-serif;padding:9px 16px;border-radius:999px;border:1px solid rgba(255,255,255,.35);background:transparent;color:#fff;cursor:pointer}#mg-cc button[data-c=yes]{background:linear-gradient(180deg,#F5DB86,#D9AE36);color:#082F31;border:0}';
